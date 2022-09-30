@@ -1,0 +1,77 @@
+.jumbotron {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.jumbotron img {
+    border: 1px solid rgb(107, 107, 107);
+    margin-top: 30px !important;
+}
+
+.navbar a {
+    font-size: 1.2em;
+}
+section {
+    min-height: 600px;
+}
+
+.pKiri {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 1s;
+}
+
+.pKanan {
+    opacity: 0;
+    transform: translate(50px, 0) rotate(-15deg);
+    transition: 1s;
+}
+
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.portfolio {
+    background-color: rgb(245, 246, 248);
+}
+
+.portfolio .thumbnail {
+    opacity: 0;
+    transition: .5s;
+    transform: translate(0, -40px)
+}
+
+.portfolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+footer {
+    padding: 15px 0;
+    color: white;
+    margin-top: 50px;
+    background-color: rgb(34, 34, 34);
+}
+
+footer .btn {
+    margin-top: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 5px;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgb(250, 196, 114);
+}
+
+hr {
+    width: 300px;
+    border-top: 2px solid rgb(107, 107, 107);
+}
